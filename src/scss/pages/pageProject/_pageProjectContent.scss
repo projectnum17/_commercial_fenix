@@ -1,0 +1,101 @@
+.page-project__content-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+}
+.page-project__content {
+  margin-bottom: 100px;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 80px;
+  }
+}
+
+.page-project__content-grid {
+  a {
+    transition: 0.5s ease-in-out;
+    span {
+      transition: 0.5s ease-in-out;
+      display: block;
+      width: 100%;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 22px;
+      padding: 20px 0;
+      border-radius: 50px;
+      text-align: center;
+
+      border: 1px solid #dee3eb;
+      color: #224479;
+
+      @media screen and (max-width: 768px) {
+        padding: 15px 0;
+      }
+    }
+
+    &:hover {
+      span {
+        background: #dee3eb;
+      }
+    }
+  }
+}
+
+.page-project__content {
+  .container {
+    .page-project__content-grid {
+      .jobs-slider__slide {
+        .slide-img {
+          @media screen and (max-width: 1023px) {
+            height: 350px;
+          }
+          @media screen and (max-width: 768px) {
+            height: 200px;
+          }
+
+          img {
+            @media screen and (max-width: 1023px) {
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+      }
+
+      .slide-content {
+        .slide-content__info {
+          @media screen and (max-width: 1023px) {
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+}
+
+.page-project__content {
+  .container {
+    & > a:last-child {
+      display: block;
+      width: 100%;
+
+      border: 1px solid #dee3eb;
+      color: #224479;
+      text-align: center;
+      padding: 20px 0;
+      width: 100%;
+      display: block;
+      border-radius: 50px;
+      transition: 0.5s ease-in-out;
+    }
+  }
+}

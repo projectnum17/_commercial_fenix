@@ -1,0 +1,20 @@
+/* Base */
+@import "./base/reset";
+@import "./base/vars";
+@import "./base/base";
+@import "./base/utils";
+@import "./base/containers";
+@import "./base/sticky-footer";
+
+/* Blocks */
+@import "./blocks/*.scss";
+
+/* Pages */
+@import "./pages/mainArtcle/*.scss";
+@import "./pages/servicesArticle/*.scss";
+@import "./pages/pageNews/*.scss";
+@import "./pages/pageProject/*.scss";
+@import "./pages/pageTeam/*.scss";
+@import "./pages/pageCareer/*.scss";
+@import "./pages/pageProtfolioProject/*.scss";
+@import "./pages/pageInvestment/*.scss";
